@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/constants/assets.dart';
 import 'package:foodapp/core/utils/styles.dart';
-import 'package:foodapp/features/Details_view.dart/presention/Views/widgets/topping_card.dart';
+import 'package:foodapp/features/Details_view.dart/presention/Views/widgets/topping_item.dart';
 
 class ToppingSide extends StatelessWidget {
   const ToppingSide({super.key});
