@@ -33,53 +33,55 @@ class HomeViewBody extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 19),
-                child: Image.asset(
-                  Assets.assetsImagesFoodgo,
-                  height: 61,
-                  width: 129,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 19),
-              child: Align(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Align(
                 alignment: Alignment.centerLeft,
-                child: Text(
-                  "Order your favourite food!",
-                  style: Styles.robtomedian18.copyWith(
-                    color: Color(0xff6A6A6A),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 19),
+                  child: Image.asset(
+                    Assets.assetsImagesFoodgo,
+                    height: 61,
+                    width: 129,
                   ),
                 ),
               ),
-            ),
-            SizedBox(height: 25),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-              Customcontainerkinds(
-                text: 'All',
-                color: Color(0xffEF2A39),
-                textcolor: Color(0xffF5F5F5),
+              Padding(
+                padding: const EdgeInsets.only(left: 19),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Order your favourite food!",
+                    style: Styles.robtomedian18.copyWith(
+                      color: Color(0xff6A6A6A),
+                    ),
+                  ),
+                ),
               ),
-              Customcontainerkinds(
-                text: 'Combos',
-                color: Color(0xffF3F4F6),
-                textcolor: Color(0xff6A6A6A),
-              ),
-              Customcontainerkinds(
-                text: 'Sliders',
-                color: Color(0xffF3F4F6),
-                textcolor: Color(0xff6A6A6A),
-              ),
-            ]),
-            SizedBox(height: 25),
-            BurgerSection(),
-          ],
+              SizedBox(height: 25),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+                Customcontainerkinds(
+                  text: 'All',
+                  color: Color(0xffEF2A39),
+                  textcolor: Color(0xffF5F5F5),
+                ),
+                Customcontainerkinds(
+                  text: 'Combos',
+                  color: Color(0xffF3F4F6),
+                  textcolor: Color(0xff6A6A6A),
+                ),
+                Customcontainerkinds(
+                  text: 'Sliders',
+                  color: Color(0xffF3F4F6),
+                  textcolor: Color(0xff6A6A6A),
+                ),
+              ]),
+              SizedBox(height: 25),
+              BurgerSection(),
+            ],
+          ),
         ),
       ),
     );

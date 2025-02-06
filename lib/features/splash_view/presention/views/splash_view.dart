@@ -17,7 +17,7 @@ class SplashView extends StatelessWidget {
     });
     return Scaffold(
       backgroundColor: Color(0xffEF2A39),
-      body: Image.asset(Assets.assetsImagesSplashscreen),
+      body: SafeArea(child: Image.asset(Assets.assetsImagesSplashscreen)),
     );
   }
 }

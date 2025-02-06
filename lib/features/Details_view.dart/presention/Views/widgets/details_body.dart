@@ -22,7 +22,8 @@ class DetailsBody extends StatelessWidget {
           SizedBox(height: 20),
           ToppingSide(),
           SizedBox(height: 50),
-          TotalandOrder()
+          TotalandOrder(),
+          SizedBox(height: 10)
         ],
       ),
     );

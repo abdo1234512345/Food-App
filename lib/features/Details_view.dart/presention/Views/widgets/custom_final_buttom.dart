@@ -79,7 +79,7 @@ class _CustomFinalButtonState extends State<CustomFinalButton> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 19),
+      padding: const EdgeInsets.only(right: 10),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xffEF2A39),

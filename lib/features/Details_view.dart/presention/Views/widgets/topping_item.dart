@@ -6,7 +6,7 @@ class ToppingItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 19, right: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 14),
       child: Container(
         width: 90,
         height: 100,

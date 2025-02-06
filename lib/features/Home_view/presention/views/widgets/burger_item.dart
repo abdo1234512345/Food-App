@@ -22,8 +22,8 @@ class BurgerItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             color: Colors.white,
           ),
-          height: 225,
-          width: 185,
+          height: MediaQuery.of(context).size.height * 0.3,
+          width: MediaQuery.of(context).size.width * 0.45,
           child: Padding(
             padding: const EdgeInsets.only(left: 11),
             child: Column(
@@ -56,7 +56,7 @@ class BurgerItem extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 Rating(
-                  width: 95,
+                  width: 65,
                 )
               ],
             ),
